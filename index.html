@@ -1,14 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Belajar Farid</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Judull</h1>
-    
+    <h1 class="titleAwal">(Developed) Pengeluaran Pemasukan</h1>
+
+
+    <div id="containerButton">
+        <div class="b1">
+            <button onclick="Pemasukan()" class="button">Pemasukan</button>
+        </div>
+        <button onclick="Pengeluaran()" class="button">Pengeluaran</button>
+    </div>
+
+    <div>
+        <form action="/action_page.php">
+            <label for="fname">Nominal</label>
+            <input type="text" id="fname" name="firstname" placeholder="Masukan Jumlah">
+
+            <div id ="kategori">
+            <label>Kategori Pendapatan</label>
+            <select>
+                <option value="OrangTua">Orang Tua</option>
+                <option value="Lainnya">Lainnya...</option>
+            </select>
+            </div>
+
+
+            <label for="meeting-time">Pilih Tanggal:</label>
+
+            <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30"
+                min="2018-06-07T00:00" max="2018-06-14T00:00">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        function Pengeluaran() {
+            document.getElementById("kategori").innerHTML = '<label>Kategori Pengeluaran</label><select><option value="Makan">Makan</option><option value="Minum">Minum</option><option value="Jajan">Jajan</option><option value="Jalan - Jalan">Jalan - Jalan</option><option value="Bensin">Bensin</option></select>';
+        }
+
+        function Pemasukan(){
+            document.getElementById("kategori").innerHTML = '<label>Kategori Pendapatan</label><select><option value="OrangTua">Orang Tua</option><option value="Lainnya">Lainnya...</option></select>';
+        }
+
+                
+
+    </script>
 </body>
+
 </html>
