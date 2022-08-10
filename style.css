@@ -14,7 +14,7 @@
     background-color: #4CAF50;
     /*Green*/border: none;
     color: white;
-    padding: 12px 25px;
+    padding: 11px 23px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -33,7 +33,7 @@
     background-color: #009005;
     /*Green*/border: none;
     color: white;
-    padding: 13px 26px;
+    padding: 12px 24px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -47,6 +47,8 @@
     -o-border-radius: 15px;
 
 }
+
+
 
 input[type=text], select {
     width: 100%;
@@ -85,4 +87,27 @@ input[type=text], select {
 input,
 label {
     margin: .4rem 0;
+}
+
+#history {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#history td, #history th {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+#history tr:nth-child(even){background-color: #f2f2f2;}
+
+#history tr:hover {background-color: #ddd;}
+
+#history th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #009236;
+  color: white;
 }
