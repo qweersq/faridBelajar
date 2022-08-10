@@ -11,7 +11,7 @@
 
 <body>
 
-    <h1 class="titleAwal">(DEV) Pengeluaran Pemasukan</h1>
+    <h1 class="titleAwal">(DEVelop) Pengeluaran Pemasukan</h1>
 
 
     <div id="containerButton">
@@ -35,12 +35,10 @@
                 <option value="Lainnya">Lainnya...</option>
             </select>
             </div>
-    
 
-            <label for="meeting-time">Pilih Tanggal:</label>
-
-            <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30"
-                min="2018-06-07T00:00" max="2018-06-14T00:00">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <input type="date" data-date="" data-date-format="DD MMMM YYYY" value="">
 
             <input type="submit" value="Submit">
         </form>
@@ -72,14 +70,16 @@
 </table>
 
 
-    <script type="text/javascript">
+    <script type="text/javascript">      
+
         function Pengeluaran() {
-            document.getElementById("kategori").innerHTML = '<label>Kategori Pengeluaran</label><select><option value="Makan">Makan</option><option value="Minum">Minum</option><option value="Jajan">Jajan</option><option value="Jalan - Jalan">Jalan - Jalan</option><option value="Bensin">Bensin</option></select>';
+            document.getElementById("kategori").innerHTML = '<label>Kategori Pengeluaran</label><select><option value="Makan">Makan</option><option value="Jajan">Jajan</option><option value="Jalan - Jalan">Jalan - Jalan</option><option value="Lainnya">Lainnya...</option>';
         }
 
         function Pemasukan(){
             document.getElementById("kategori").innerHTML = '<label>Kategori Pendapatan</label><select><option value="OrangTua">Orang Tua</option><option value="Hutang">Hutang</option><option value="Freelance">Freelance</option><option value="Lainnya">Lainnya...</option></select></div>';
         }
+        
         
 
                 
